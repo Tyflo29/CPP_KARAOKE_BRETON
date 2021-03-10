@@ -5,11 +5,12 @@ class Player
 {
 private:
     std::string nomPlayer;
-    int score;
+    int meilleurScore;
     int moyenne;
     int total;
     int numMeilleurMusique;
     int numPireMusique;
+    int scoreMusique[5];
 
 public:
     std::string getNomPlayer();
