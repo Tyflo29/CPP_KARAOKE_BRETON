@@ -2,6 +2,14 @@
 #include <string>
 #include <iostream>
 
+Player::Player(std::string name){
+    nomPlayer = name;
+}
+Player::Player(){
+    nomPlayer = "Défaut";
+}
+
+
 std::string Player::getNomPlayer(){
     return nomPlayer;
 }

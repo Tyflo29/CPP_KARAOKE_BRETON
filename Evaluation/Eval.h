@@ -12,7 +12,7 @@ private:
     int reserve1;
     int numMeilleurMusique;
     int numPireMusique;
-    int scoreMusique[5];
+    int scoreMusique[5] = {10,10,10,10,10};
 
 public:
     std::string getNomPlayer();
