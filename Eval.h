@@ -5,18 +5,21 @@ class Player
 {
 private:
     std::string nomPlayer;
-    int meilleurScore;
+    int meilleurScore = 0;
     int moyenne;
     int total;
+    int reserve;
+    int reserve1;
     int numMeilleurMusique;
     int numPireMusique;
     int scoreMusique[5];
 
 public:
     std::string getNomPlayer();
-    int getScorePlayer();
+    int getMeilleurScorePlayer();
     int getMoyennePlayer();
     int getTotalScorePlayer();
+    int getPireScorePlayer();
     Player();
     Player(std::string name);
 };
