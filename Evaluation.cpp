@@ -7,7 +7,11 @@ std::string Player::getNomPlayer(){
 }
 
 int Player::getScorePlayer(){
-    return score;
+    for(int i=0;i<50;++i){
+       if(scoreMusique[i]>meilleurScore)
+            meilleurScore=scoreMusique[i];
+    }
+    return meilleurScore;
 }
 
 int Player::getMoyennePlayer(){
