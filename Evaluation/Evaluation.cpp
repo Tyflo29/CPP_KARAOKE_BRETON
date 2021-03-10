@@ -11,6 +11,7 @@
 
 
     std::string Player::getNomPlayer(){
+        std::cout << nomPlayer << std::endl;
         return nomPlayer;
     }
 
@@ -30,7 +31,7 @@
         for(int i=0;i<5;i++){
             reserve += scoreMusique[i];
         }
-        moyenne = (reserve/5);
+        moyenne = reserve*(0.2);
         std::cout <<"Votre moyenne de score est : "<< moyenne << std::endl;
         return moyenne;
     }
